@@ -14133,10 +14133,18 @@ Geographic:</p>
 </li>
 <li><p>Even if we ignore the countries we still don't know if the survey is representative of the tech workforce based on gender and age.</p>
 </li>
-<li><p>Since the participation in the survey was not mandatory self-selection bias is possibly also an issue. We can assume that workers who might suffer from mental health issues were more likely to participate but we can't estimate the degree of this.</p>
+<li><p>Since the participation in the survey was not mandatory self-selection bias is possibly also an issue. We can assume that workers who might suffer from mental health issues were more likely to participate, but we can't estimate the degree of this.</p>
 </li>
 </ul>
-<p>In addition, there are several issues with the analysis itself which could be adressed in the future:</p>
+<p>In addition, there are several issues with the analysis itself which could be addressed in the future:</p>
+<ul>
+<li><p>Because the  sample of the population participating in the survey is likely highly unrepresentative it would be a good idea to apply weighting techniques to the analysis. Both to adjust between demographic differences between different years (.e.g more workers in early surveys worked in tech companies, the composition of countries differed etc.) and adjust it based on the overal population (by using additional datasets).</p>
+</li>
+<li><p>Most of the focus has been on a set of arbitrarily selected questions. We should utilize more advanced techniques like clustering and PCA to include a higher number of questions in the analysis. That would also help us get a clearer picture on their relationships). Additionally, it might make sense to consider building a multiple regression or other model to determine the statistical significant of different questions (we would need to select a target variable (or multiple ones) for that which might be tricky given the nature of the survey).</p>
+</li>
+<li><p>The associated paper and other metadata should've been analyzed deeper before doing this analysis.</p>
+</li>
+</ul>
 <h4 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">¶</a></h4><p>We can see several patterns in the analysis:</p>
 <ul>
 <li>Male workers are much less likely to report that they have any mental health issues compared to female/other. They are also less likely to seek treatment for these issues.</li>
